@@ -1,4 +1,4 @@
-<h1>Site aluguel dos jogos de tabuleiro</h1>
+<h1>Site carrinho de compras</h1>
 
 <h2>📝 Sobre</h2>
 <p>Projeto utilizado nos cursos de lógica de programação da Alura.</p>
