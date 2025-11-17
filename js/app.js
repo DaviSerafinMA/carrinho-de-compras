@@ -39,16 +39,16 @@ function adicionar(){//quando acionado a função
         qnt = qnt + addQnt; //soma a quantidade nova com a quantidade anterior
 
         returnId.remove(); //remove o elemento do produto anterior para que possamos inserir um novo
-        carrinho.innerHTML = `<section class="carrinho__produtos__produto" id="${id}"> ; 
-                                <span class="texto-azul">${qnt}x</span> ${nome} <span class="texto-azul">R$${valorUnit}</span>;
+        carrinho.innerHTML = `<section class="carrinho__produtos__produto" id="${id}">  
+                                <span class="texto-azul">${qnt}x</span> ${nome} <span class="texto-azul">R$${valorUnit}</span>
                             </section>` + carrinho.innerHTML; //adciona o produto repetido agora com a quantidade alterada sem alterar outros produtos
 
 
     }else{
         carrinhoArray.push(id); //adiciona o id do produto ao array, se for adicionado novamente vai parar no if
         
-        carrinho.innerHTML = carrinho.innerHTML+`<section class="carrinho__produtos__produto" id="${id}"> ;
-                                <span class="texto-azul">${qnt}x</span> ${nome} <span class="texto-azul">R$${valorUnit}</span>;
+        carrinho.innerHTML = carrinho.innerHTML+`<section class="carrinho__produtos__produto" id="${id}"> 
+                                <span class="texto-azul">${qnt}x</span> ${nome} <span class="texto-azul">R$${valorUnit}</span>
                             </section>`; //adiciona o produto no carrinho
         };
     }else{
